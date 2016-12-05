@@ -36,7 +36,7 @@
             android:layout_width="match_parent"
             android:layout_height="60dp"
             android:text="Новый маршрут"
-            android:id="@+id/button1"
+            android:id="@+id/buttonNewRout"
             android:background="@android:color/holo_red_dark">
         </Button>
 
