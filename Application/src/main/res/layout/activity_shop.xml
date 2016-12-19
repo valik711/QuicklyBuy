@@ -1,63 +1,112 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
-
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:orientation="vertical">
     <TabHost
+        android:id="@android:id/tabhost"
         android:layout_width="match_parent"
-        android:layout_height="350dp">
-
+        android:layout_height="match_parent">
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:orientation="vertical">
-
             <TabWidget
                 android:id="@android:id/tabs"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal" />
-
+                android:layout_height="wrap_content">
+            </TabWidget>
             <FrameLayout
                 android:id="@android:id/tabcontent"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent">
+                android:layout_height="410dp">
 
                 <LinearLayout
-                    android:id="@+id/Алми"
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent"
+                    android:id="@+id/lnShop"
                     android:orientation="vertical"
-                    android:weightSum="1">
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:text="sdgdfgfhjhjkhj"/>
+                    android:layout_height="match_parent">
 
+                    <CheckedTextView
+                        android:id="@+id/almiTab1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/almi_text_shop1">
+                    </CheckedTextView>
+                    <CheckedTextView
+                        android:id="@+id/almiTab2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/almi_text_shop2">
+                    </CheckedTextView>
+                    <CheckedTextView
+                        android:id="@+id/almiTab3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/almi_text_shop3">
+                    </CheckedTextView>
                 </LinearLayout>
 
                 <LinearLayout
-                    android:id="@+id/Корона"
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:orientation="vertical">
+                    android:id="@+id/lnShop2"
+                    android:orientation="vertical"
+                    android:layout_height="match_parent">
 
+                    <CheckedTextView
+                        android:id="@+id/gippoTab1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/gippo_text_shop1">
+                    </CheckedTextView>
+                    <CheckedTextView
+                        android:id="@+id/gippoTab2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/gippo_text_shop2">
+                    </CheckedTextView>
+                    <CheckedTextView
+                        android:id="@+id/gippoTab3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/gippo_text_shop3">
+                    </CheckedTextView>
                 </LinearLayout>
 
                 <LinearLayout
-                    android:id="@+id/Гиппо"
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:orientation="vertical">
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:text="sdfsdfsdf"/>
+                    android:id="@+id/lnShop3"
+                    android:orientation="vertical"
+                    android:layout_height="match_parent">
+
+                    <CheckedTextView
+                        android:id="@+id/koronaTab1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/korona_text_shop1">
+                    </CheckedTextView>
+                    <CheckedTextView
+                        android:id="@+id/koronaTab2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/korona_text_shop2">
+                    </CheckedTextView>
+                    <CheckedTextView
+                        android:id="@+id/koronaTab3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/korona_text_shop3">
+                    </CheckedTextView>
                 </LinearLayout>
+
             </FrameLayout>
         </LinearLayout>
     </TabHost>
-
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="130dp"
@@ -70,7 +119,7 @@
             android:layout_width="match_parent"
             android:layout_height="60dp"
             android:text="Выбрать"
-            android:id="@+id/buttonNewRout"
+            android:id="@+id/buttonChoose"
             android:background="@android:color/holo_red_dark">
         </Button>
 
@@ -79,7 +128,7 @@
             android:layout_height="60dp"
             android:text="Назад"
             android:layout_marginTop="10dp"
-            android:id="@+id/button2"
+            android:id="@+id/buttonBack"
             android:background="@android:color/holo_red_dark">
         </Button>
 

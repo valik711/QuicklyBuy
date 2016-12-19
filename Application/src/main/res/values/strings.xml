@@ -1,3 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">FirstApp</string>
+    <string name="gippo_text_shop1">Первый адрес магазина ГИППО</string>
+    <string name="gippo_text_shop2">Второй адрес магазина ГИППО</string>
+    <string name="gippo_text_shop3">Третий адрес магазина ГИППО</string>
+
+    <string name="almi_text_shop1">Первый адрес магазина АЛМИ</string>
+    <string name="almi_text_shop2">Второй адрес магазина АЛМИ</string>
+    <string name="almi_text_shop3">Третий адрес магазина АЛМИ</string>
+
+    <string name="korona_text_shop1">Первый адрес магазина Корона</string>
+    <string name="korona_text_shop2">Второй адрес магазина КОрона</string>
+    <string name="korona_text_shop3">Третий адрес магазина Корона</string>
 </resources>

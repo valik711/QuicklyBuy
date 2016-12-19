@@ -14,6 +14,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         setContentView(R.layout.activity_main);
 
         buttonNewRout = (Button) findViewById(R.id.buttonNewRout);
+        buttonNewRout.setOnClickListener(this);
     }
 
     @Override
